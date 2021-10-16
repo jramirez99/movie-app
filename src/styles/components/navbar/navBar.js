@@ -8,6 +8,7 @@ import { devices } from '../../base/mediaQueriesStyled';
 export const Bar = styled.div`
     background-color: ${ primaryColor };
 `;
+
 export const NavBarContainer = styled.div`
     ${ flex.column };
     padding: 4rem;

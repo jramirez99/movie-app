@@ -23,7 +23,7 @@ export const Links = styled(Link)`
     color: ${ white };
     margin-bottom: 2rem;
     font-weight: ${ bold };
-    font-size: 1.7rem;
+    font-size: 1.6rem;
 
     &:last-of-type {
         margin-bottom: 0;
