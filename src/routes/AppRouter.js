@@ -6,6 +6,7 @@ import {
     Route
 } from 'react-router-dom';
 
+import { NavBar } from '../components/navbar/NavBar';
 import { Home } from '../components/home/Home';
 import { LatestReleases } from '../components/movie/LatestReleases';
 import { Populars } from '../components/movie/Populars';
@@ -16,6 +17,8 @@ export const AppRouter = () => {
     return (
         <Router>
             <div>
+                <NavBar />
+
                 <Switch>
                     <Route exact path="/" component={ Home } />
                     <Route exact path="/latest-realeses" component={ LatestReleases } />
