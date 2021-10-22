@@ -10,8 +10,7 @@ export const Home = () => {
     const res = useFetch( `${ baseURL }/movie/popular?api_key=${ apiKey }&language=es-MX&page=1` );
     const movies =  res.result.results;
     if( movies === undefined ) return null;
-    // console.log(movies)
-    
+
     return (
         <>
             <SlidersMovies 
