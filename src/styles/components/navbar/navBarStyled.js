@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { flex } from '../../../styles/base/mixinsStyled'
+import { fColumn } from '../../base/mixinsStyled'
 import { primaryColor } from '../../base/variablesStyled';
 import { devices } from '../../base/mediaQueriesStyled';
 
@@ -10,13 +10,14 @@ export const Bar = styled.div`
 `;
 
 export const NavBarContainer = styled.div`
-    ${ flex.column };
-    padding: 4rem;
+    ${ fColumn };
+    padding:  4rem 0;
     align-items: center;
 
     ${ devices.tablet`
         flex-direction: row;
         gap: 5rem;
+        padding:  2rem 0;
     `}
 
     img {

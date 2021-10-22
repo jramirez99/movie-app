@@ -1,6 +1,7 @@
 import React from 'react';
 
-import { Links, Navigation } from '../../styles/components/navbar/nav';
+import { Navigation } from '../../styles/components/navbar/navStyled';
+import { Links } from '../../styles/base/botonesStyled';
 
 export const Nav = () => {
     return (

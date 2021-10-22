@@ -2,7 +2,7 @@
 export const mainFont = 'Poppins, sans-serif';
 
 // colores
-export const primaryColor = '#0da6f3';
+export const primaryColor = '#003780';
 export const secondaryColor = '#102770';
 export const white = '#ffffff';
 export const black = '#1a1b15';
