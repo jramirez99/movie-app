@@ -23,11 +23,12 @@ export const Button = styled.button`
 export const Links = styled(Link)`
     background-color: ${ props => props.bg};
     border: 0;
+    border-radius: ${ props => props.round || 0 };
     color: ${ props => props.color || ` ${white} `};
-    font-size: 1.5rem;
     display: inline-block;
-    margin-top: 1rem;
-    padding: 1rem 3rem;
+    font-size: 1.5rem;
+    margin-top: ${ props => props.margin || 0};
+    padding: ${ props => props.padding || '1rem 3rem'};
     text-align: center;
 
     &:hover {
