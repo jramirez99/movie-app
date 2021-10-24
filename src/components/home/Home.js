@@ -9,7 +9,6 @@ import { TopRated } from '../movieList/TopRated';
 import { ContainerGrid, ListBox, H2,Info } from '../../styles/components/home/homeStyled';
 
 
-
 export const Home = () => {
     const res = useFetch( `${ baseURL }/movie/now_playing?api_key=${ apiKey }&language=es-MX&page=1` );
     if ( res.loading || !res.result ) {
@@ -33,7 +32,7 @@ export const Home = () => {
                 </ListBox>
 
                 <ListBox>
-                    <H2> Populares </H2>
+                    <H2> Más valorado </H2>
                     <Info>
                         <TopRated />
                     </Info>
