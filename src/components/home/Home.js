@@ -33,7 +33,7 @@ export const Home = () => {
                 </ListBox>
 
                 <ListBox>
-                    <H2> Populares </H2>
+                    <H2> Más valorado </H2>
                     <Info>
                         <TopRated />
                     </Info>
