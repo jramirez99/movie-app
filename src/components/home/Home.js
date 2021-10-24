@@ -4,6 +4,10 @@ import { useFetch } from '../../hooks/useFetch';
 import { baseURL, apiKey } from '../../config/api';
 import { SlidersMovies } from '../slidersMovies/SlidersMovies';
 import { Spinner } from '../spinner/Spinner';
+import { PopularsList } from '../movieList/PopularsList';
+import { TopRated } from '../movieList/TopRated';
+import { ContainerGrid, ListBox, H2,Info } from '../../styles/components/home/homeStyled';
+
 
 
 export const Home = () => {
@@ -17,9 +21,24 @@ export const Home = () => {
     return (
         <>
             <SlidersMovies 
-                movies={movies}
+                movies={ movies }
             />
 
+            <ContainerGrid>
+                <ListBox>
+                    <H2> Populares </H2>
+                    <Info>
+                        <PopularsList />
+                    </Info>
+                </ListBox>
+
+                <ListBox>
+                    <H2> Populares </H2>
+                    <Info>
+                        <TopRated />
+                    </Info>
+                </ListBox>
+            </ContainerGrid>
         </>
     );
 };
