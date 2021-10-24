@@ -7,7 +7,7 @@ import { Spinner } from '../spinner/Spinner';
 import { PopularsList } from '../movieList/PopularsList';
 import { TopRated } from '../movieList/TopRated';
 import { ContainerGrid, ListBox, H2,Info } from '../../styles/components/home/homeStyled';
-
+import { Footer } from '../footer/Footer';
 
 
 export const Home = () => {
@@ -39,6 +39,8 @@ export const Home = () => {
                     </Info>
                 </ListBox>
             </ContainerGrid>
+
+            <Footer />
         </>
     );
 };
