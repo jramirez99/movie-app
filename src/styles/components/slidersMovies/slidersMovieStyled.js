@@ -4,7 +4,7 @@ import { devices } from '../../../styles/base/mediaQueriesStyled';
 
 export const Hero = styled.div`
     background-image: url(${ props => props.bg });
-    height: 60rem;
+    height: ${ props => props.height || '60rem'};
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;

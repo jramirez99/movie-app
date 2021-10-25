@@ -7,21 +7,21 @@ import { secondaryColor, white } from './variablesStyled';
 export const Button = styled.button`
     background-color: ${ props => props.bg || `${ secondaryColor }`};
     border: 0;
+    border-radius: ${ props => props.round || 0 };
     color: ${ props => props.color || ` ${white} `};
     font-size: 1.5rem;
-    margin-top: 2rem;
-    padding: 1rem 3rem;
+    margin: ${ props => props.margin || '1rem' };
+    padding: ${ props => props.padding || '1rem 3rem'};
     text-align: center;
 
     &:hover {
-        background-color: darken(${ props => props.bg}, 5);
+        background-color: darken(${ props => props.bg || `${ secondaryColor }` }, 5);
         cursor: pointer;
     }
 `;
 
-
 export const Links = styled(Link)`
-    background-color: ${ props => props.bg};
+    background-color: ${ props => props.bg || `${ secondaryColor }`};
     border: 0;
     border-radius: ${ props => props.round || 0 };
     color: ${ props => props.color || ` ${white} `};
@@ -32,7 +32,12 @@ export const Links = styled(Link)`
     text-align: center;
 
     &:hover {
-        background-color: darken(${ props => props.bg}, 5);
+        background-color: darken(${ props => props.bg || `${ secondaryColor }` }, 5);
         cursor: pointer;
     }
+`;
+
+export const I = styled.i`
+    font-size: ${ props => props.size || '10rem'};
+    margin: ${ props => props.margin || '1rem' };
 `;
