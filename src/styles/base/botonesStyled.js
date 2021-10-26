@@ -9,7 +9,7 @@ export const Button = styled.button`
     border: 0;
     border-radius: ${ props => props.round || 0 };
     color: ${ props => props.color || ` ${white} `};
-    font-size: 1.5rem;
+    font-size: ${ props => props.fsize || ` 1.5rem `};
     margin: ${ props => props.margin || '1rem' };
     padding: ${ props => props.padding || '1rem 3rem'};
     text-align: center;
