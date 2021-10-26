@@ -4,15 +4,16 @@ import { useParams } from 'react-router-dom';
 import { useFetch } from '../../../hooks/useFetch';
 import { baseURL, apiKey } from '../../../config/api';
 import { NavigationButton } from '../../navigationButton/NavigationButton';
+import { ButtonModal } from '../../modal/Modal';
 
 import { 
-        ButtonP,
         ContainerGrid,  
         Description, 
         Hero,
         TitleBox 
 } from '../../../styles/components/movie/movieInfo/movieInfoStyled';
-import { I } from '../../../styles/base/botonesStyled';
+
+
 
 export const Movie = () => {
     const { id }= useParams();
@@ -45,16 +46,10 @@ export const Movie = () => {
                                 <span> { release_date } </span> 
                             </h2>
 
-                            <ButtonP padding=".7rem .8rem"> 
-                                <I 
-                                    className="fas fa-play"
-                                    size="2rem"
-                                    >
-                                </I>
-                                    Ver trailer 
-                            </ButtonP>
+                            <ButtonModal id={ id } />
                         </TitleBox>
 
+ 
                         <Description> 
                             <p> 
                                 Descripción 
