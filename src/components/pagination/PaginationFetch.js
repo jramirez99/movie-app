@@ -16,7 +16,7 @@ export const PaginationFetch = ( { route } ) => {
     const onChangePage = currentPage => {
         setcurrentPage( currentPage );
     };
-
+    
     return (
         <>
             <CatalogList 
