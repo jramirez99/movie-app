@@ -13,7 +13,6 @@ import {
 } from '../../../styles/components/movie/movieInfo/movieInfoStyled';
 
 
-
 export const Movie = () => {
     const { id }= useParams();
 
