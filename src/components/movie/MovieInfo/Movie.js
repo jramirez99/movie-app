@@ -3,7 +3,6 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import { useFetch } from '../../../hooks/useFetch';
 import { baseURL, apiKey } from '../../../config/api';
-import { NavigationButton } from '../../navigationButton/NavigationButton';
 import { ButtonModal } from '../../modal/Modal';
 
 import { 
@@ -12,7 +11,6 @@ import {
         Hero,
         TitleBox 
 } from '../../../styles/components/movie/movieInfo/movieInfoStyled';
-
 
 
 export const Movie = () => {
@@ -69,8 +67,6 @@ export const Movie = () => {
                                 }
                             </ul>
                         </Description>
-
-                        <NavigationButton />
                     </div>
                 </ContainerGrid>
             </Hero>

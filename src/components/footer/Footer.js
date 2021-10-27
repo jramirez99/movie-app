@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { P } from '../../styles/components/footer/footer';
+import { P } from '../../styles/components/footer/footerStyled';
 
 export const Footer = () => {
     return (

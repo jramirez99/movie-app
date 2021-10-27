@@ -6,13 +6,13 @@ import {
     Route
 } from 'react-router-dom';
 
-import { NavBar } from '../components/navbar/NavBar';
-import { Home } from '../components/home/Home';
-import { LatestReleases } from '../components/movie/LatestReleases';
-import { Movie } from '../components/movie/MovieInfo/Movie';
-import { Populars } from '../components/movie/Populars';
-import { Search } from '../components/movie/Search';
 import { Error404 } from '../components/error404/Error404';
+import { Home } from '../components/home/Home';
+import { LatestReleases } from '../components/movie/latestReleases/LatestReleases';
+import { Movie } from '../components/movie/MovieInfo/Movie';
+import { NavBar } from '../components/navbar/NavBar';
+import { Populars } from '../components/movie/populars/Populars';
+import { Search } from '../components/movie/Search';
 
 export const AppRouter = () => {
     return (
