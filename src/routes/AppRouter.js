@@ -12,7 +12,7 @@ import { LatestReleases } from '../components/movie/latestReleases/LatestRelease
 import { Movie } from '../components/movie/MovieInfo/Movie';
 import { NavBar } from '../components/navbar/NavBar';
 import { Populars } from '../components/movie/populars/Populars';
-import { Search } from '../components/movie/Search';
+import { Search } from '../components/movie/search/Search';
 
 export const AppRouter = () => {
     return (
