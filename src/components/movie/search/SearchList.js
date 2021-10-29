@@ -1,6 +1,5 @@
 import React from 'react';
 import { MovieCatalog } from '../../movieCatalog/MovieCatalog';
-
 import { ContainerGrid } from '../../../styles/components/movieCatalog/movieCatalogStyled';
 
 export const SearchList = ( { movies } ) => {
