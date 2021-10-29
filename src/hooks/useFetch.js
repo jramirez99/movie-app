@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-export const useFetch = ( url ) => {
+export const useFetch = ( url, options ) => {
 
     const [loading, setLoading] = useState( true )
     const [result, setResult] = useState( [] );
@@ -18,7 +18,7 @@ export const useFetch = ( url ) => {
             }
         };
         consularApi();
-    }, [url]);
+    }, [url, options]);
 
     return { result, loading };
 };
